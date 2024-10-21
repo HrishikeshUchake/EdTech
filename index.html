@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech - Learn Anything, Anytime, Anywhere!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .hero-section {
+            height: 80vh;
+            min-height: 500px;
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9), url('hero-bg.jpg') center/cover no-repeat;
+            color: #343a40;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: 60%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .search-bar input {
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .course-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-box {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #555;
+        }
+
+        .carousel-item {
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 8px 15px;
+            font-size: 1rem;
+        }
+
+        .nav-item .btn {
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+
+        .navbar-nav .dropdown-menu {
+            border-radius: 0;
+        }
+
+        .navbar-nav .dropdown-item:hover {
+            background-color: #e0f7fa;
+        }
+        .carousel-item {
+            display: none;
+            transition: opacity 0.5s;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+
+        .testimonial {
+            font-style: italic;
+            font-size: 1.2rem;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/image/logo.png" alt="EdTech Logo" width="30" height="30" class="d-inline-block align-top">
+                EdTech
+            </a>
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./courses.html">Courses</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Web Development</a>
+                            <a class="dropdown-item" href="#">Data Science</a>
+                            <a class="dropdown-item" href="#">Calculus</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./authors.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ml-2" href="./login.html"
+                            style="border-radius: 20px;">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ml-2 text-white" href="./sign-up.html"
+                            style="border-radius: 20px;">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1 class="display-4 font-weight-bold">EdTech</h1>
+        <p class="lead">Learn Anything, Anytime, Anywhere!</p>
+
+    </div>
+
+    <!-- Popular Courses Section -->
+    <!--
+    <div class="container mt-5" id="popular-courses">
+        <h2 class="text-center mb-4">Popular Courses</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="course1.jpg" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development for Beginners</h5>
+                        <p class="card-text">Start your journey in web development with this comprehensive beginner course.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="course2.jpg" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science with Python</h5>
+                        <p class="card-text">Learn data analysis and visualization using Python in this popular course.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="course3.jpg" class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing Essentials</h5>
+                        <p class="card-text">Master digital marketing strategies and tools with hands-on training.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Why Choose EdTech Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Why Choose EdTech</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-chalkboard-teacher icon-box"></i>
+                <h5>Expert Instructors</h5>
+                <p>Learn from the best in the industry with years of experience.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-laptop icon-box"></i>
+                <h5>Flexible Learning</h5>
+                <p>Access courses at your own pace, from anywhere, anytime.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-certificate icon-box"></i>
+                <h5>Certifications</h5>
+                <p>Earn recognized certificates to advance your career.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">What Our Learners Say</h2>
+        <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Testimonial -->
+                <div class="carousel-item active">
+                    <p class="testimonial text-center">
+                        "I love the flexibility that EdTech offers. I can learn at my own pace and still earn
+                        certifications!"
+                        <br><strong>- Jeff Bezos</strong>
+                    </p>
+                </div>
+                <!-- Second Testimonial -->
+                <div class="carousel-item">
+                    <p class="testimonial text-center">
+                        "EdTech has transformed my learning experience. The courses are well-structured and the
+                        instructors are excellent!"
+                        <br><strong>- Elon Musk</strong>
+                    </p>
+                </div>
+                <!-- Third Testimonial -->
+                <div class="carousel-item">
+                    <p class="testimonial text-center">
+                        "The variety of courses available on EdTech is amazing. There's something for everyone."
+                        <br><strong>- Bill Gates</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+            $('#testimonialsCarousel').carousel({
+                interval: 5000 // Change slides every 3 seconds
+            });
+        });
+    </script>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 EdTech. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery, and Font Awesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

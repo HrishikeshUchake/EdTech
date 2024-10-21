@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EdTech</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Center the form container */
+        .signup-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            padding: 20px;
+        }
+
+        .signup-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .signup-form h3 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .btn-signup {
+            background: linear-gradient(to right, #66b3ff, #33d9b2);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.3s;
+            width: 100%;
+        }
+
+        .btn-signup:hover {
+            background: linear-gradient(to right, #33a8ff, #29b398);
+            transform: translateY(-3px);
+        }
+
+        .signup-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .signup-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sign Up Container -->
+    <div class="signup-container">
+        <form class="signup-form">
+            <h3>Sign Up for EdTech</h3>
+
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Confirm Password Input -->
+            <div class="form-group">
+                <label for="confirm-password"><i class="fas fa-lock"></i> Confirm Password</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="Confirm your password" required>
+            </div>
+
+            <!-- Sign Up Button -->
+            <button type="submit" class="btn btn-signup">Sign Up</button>
+
+            <!-- Additional Link -->
+            <div class="signup-links">
+                Already have an account? <a href="/login.html">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

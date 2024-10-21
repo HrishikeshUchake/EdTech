@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Hrishikesh Uchake",
+        "photo": "image/Hrishikesh_pic.JPG",
+        "bio": "Hrishikesh is a driven and innovative third-year Computer Science student at Iowa State University. He has an interest in iOS as well as Android app development, Web development and, a strong passion for emerging technologies, and a commitment to contributing to impactful projects, he aims to gain valuable experience and further develop his technical and problem-solving skills.",
+        "linkedin": "https://www.linkedin.com/in/hrishikeshuchake21/",
+        "github": "https://github.com/HrishikeshUchake",
+        "email": "hrishi21@iastate.edu"
+    },
+    {
+        "name": "Subhajit Guchhait",
+        "photo": "image/subhajit_pic.jpeg",
+        "bio": "Hi, I am Subhajit Guchhait , a passionate software developer pursuing a Bachelor’s in Computer Science at Iowa State University. With a strong foundation in Java, Python, and JavaScript, he has developed a range of projects, including React Native apps and dockerized backend systems. Subhajit has demonstrated leadership in both technical and team environments, with a focus on creating secure and efficient applications. He is dedicated to continuous learning and thrives in collaborative settings.",
+        "linkedin": "https://www.linkedin.com/in/subhajit-guchhait-670a4124a/",
+        "github": "https://github.com/Subhajit578",
+        "email": "subhajit@iatate.edu"
+    }
+]

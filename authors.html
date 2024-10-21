@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors Information</title>
+    <style>
+        /* Add space below the fixed navbar */
+        body {
+            padding-top: 50px; /* Adjust this value to match the height of the navbar */
+        }
+
+        /* General Styles for the Authors Container */
+        .authors-container {
+            min-height: 100vh;
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Card Styles */
+        .card-deck {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 18rem;
+            border: none;
+            /* Removes border */
+            border-radius: 10px;
+            /* Adds rounded corners */
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styles */
+        .btn-instructor {
+            background: linear-gradient(to right, #66b3ff, #33d9b2);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            margin: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn-instructor:hover {
+            background: linear-gradient(to right, #33a8ff, #29b398);
+            transform: translateY(-3px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/image/logo.png" alt="EdTech Logo" width="30" height="30" class="d-inline-block align-top">
+                EdTech
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Web Development</a>
+                            <a class="dropdown-item" href="#">Data Science</a>
+                            <a class="dropdown-item" href="#">Calculus</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./authors.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ml-2" href="./login.html" style="border-radius: 20px;">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ml-2 text-white" href="./sign-up.html" style="border-radius: 20px;">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Authors Section -->
+    <div class="container-fluid authors-container" id="authors-container">
+        <!-- Content will be populated by JS -->
+    </div>
+
+    <!-- Meet Our Instructor Button -->
+    <div class="text-center my-5">
+        <a href="/instructor.html" class="btn btn-instructor">
+            Meet Our Instructor
+        </a>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 EdTech. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="authors_script.js"></script> <!-- Link to JS file -->
+</body>
+
+</html>

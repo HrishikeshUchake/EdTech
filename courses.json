@@ -1,0 +1,370 @@
+{
+    "courses": [
+      {
+        "courseName": "Full Stack Web Development",
+        "id":1,
+        "description": "Learn to build modern web applications using popular technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
+        "topicsCovered": [
+          "HTML & CSS Basics",
+          "JavaScript Essentials",
+          "React Fundamentals",
+          "Node.js & Express",
+          "MongoDB & Mongoose",
+          "Authentication & Authorization",
+          "Deployment & Hosting"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 299.99,
+          "discount": "10% Off"
+        },
+        "duration": "12 weeks",
+        "level": "Beginner to Intermediate",
+        "instructor": {
+          "name": "John Doe",
+          "experience": "10 years in Web Development",
+          "rating": 4.8
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Jane Smith",
+            "rating": 5,
+            "comment": "Excellent course! The instructor explained everything clearly."
+          },
+          {
+            "reviewer": "Tom Harris",
+            "rating": 4.5,
+            "comment": "Great content, but could use more practical examples."
+          }
+        ],
+        "enrollmentLink": "https://example.com/fullstack-web-development",
+        "image":"./image/WD.webp" 
+      },
+      {
+        "courseName": "Advanced Software Development",
+        "id":2,
+        "description": "Enhance your software development skills by mastering advanced programming concepts, design patterns, and software architecture.",
+        "topicsCovered": [
+          "Design Patterns",
+          "Microservices Architecture",
+          "Unit Testing & TDD",
+          "SOLID Principles",
+          "Concurrency & Multithreading",
+          "API Design",
+          "Cloud Computing"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 499.99,
+          "discount": "15% Off"
+        },
+        "duration": "16 weeks",
+        "level": "Advanced",
+        "instructor": {
+          "name": "Emily Green",
+          "experience": "12 years in Software Development",
+          "rating": 4.9
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Alice Wong",
+            "rating": 4.7,
+            "comment": "Challenging but rewarding. Definitely for experienced developers."
+          }
+        ],
+        "enrollmentLink": "https://example.com/advanced-software-development",
+        "image":"./image/ASD.webp"
+      },
+      {
+        "courseName": "Business Analytics with Python",
+        "id":3,
+        "description": "Gain hands-on experience in business analytics by learning how to analyze, visualize, and interpret business data using Python.",
+        "topicsCovered": [
+          "Introduction to Business Analytics",
+          "Data Wrangling with Pandas",
+          "Data Visualization with Matplotlib & Seaborn",
+          "Predictive Analytics",
+          "Statistical Analysis",
+          "Machine Learning Models",
+          "Case Studies in Business Analytics"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 399.99,
+          "discount": "20% Off"
+        },
+        "duration": "10 weeks",
+        "level": "Intermediate",
+        "instructor": {
+          "name": "David Brown",
+          "experience": "8 years in Data Science and Business Analytics",
+          "rating": 4.6
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Michael Johnson",
+            "rating": 4.8,
+            "comment": "Amazing course, I learned a lot about business data analytics!"
+          }
+        ],
+        "enrollmentLink": "https://example.com/business-analytics-python",
+        "image":"./image/BA.webp"
+      },
+      {
+        "courseName": "Mathematics for Data Science",
+        "id":4,
+        "description": "Strengthen your foundational knowledge in mathematics, focusing on key concepts like linear algebra, calculus, and probability for data science applications.",
+        "topicsCovered": [
+          "Linear Algebra",
+          "Calculus",
+          "Probability Theory",
+          "Optimization Techniques",
+          "Matrix Operations",
+          "Statistical Inference",
+          "Mathematical Modeling"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 199.99,
+          "discount": "5% Off"
+        },
+        "duration": "8 weeks",
+        "level": "Beginner to Intermediate",
+        "instructor": {
+          "name": "Sophia Martinez",
+          "experience": "7 years teaching Mathematics",
+          "rating": 4.7
+        },
+        "certification": false,
+        "reviews": [
+          {
+            "reviewer": "Sam Patel",
+            "rating": 4.5,
+            "comment": "Great introduction to the math needed for data science."
+          }
+        ],
+        "enrollmentLink": "https://example.com/math-for-data-science",
+        "image":"./image/MDS.webp"
+      },
+      {
+        "courseName": "Front-End Development with React",
+        "id":5,
+        "description": "Learn how to build interactive, fast, and dynamic web pages using React.js, the most popular front-end framework.",
+        "topicsCovered": [
+          "React Components & JSX",
+          "State & Props Management",
+          "React Router",
+          "Context API",
+          "Hooks & Functional Components",
+          "Redux for State Management",
+          "Testing React Applications"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 249.99,
+          "discount": "10% Off"
+        },
+        "duration": "8 weeks",
+        "level": "Intermediate",
+        "instructor": {
+          "name": "Carlos Garcia",
+          "experience": "6 years in Front-End Development",
+          "rating": 4.6
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Linda Roy",
+            "rating": 4.9,
+            "comment": "A great in-depth course on React. Helped me a lot in building my own projects!"
+          }
+        ],
+        "enrollmentLink": "https://example.com/frontend-development-react"
+        ,"image":"./image/FDR.webp"
+      },
+      {
+        "courseName": "Cloud Computing with AWS",
+        "id":6,
+        "description": "Master the cloud by learning AWS essentials, including EC2, S3, RDS, and Lambda functions, and prepare for AWS certification exams.",
+        "topicsCovered": [
+          "Introduction to Cloud Computing",
+          "AWS EC2 & Auto Scaling",
+          "Storage Solutions with S3",
+          "Database Management with RDS",
+          "Serverless Computing with Lambda",
+          "Security in AWS",
+          "Monitoring & Optimization"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 399.99,
+          "discount": "12% Off"
+        },
+        "duration": "10 weeks",
+        "level": "Intermediate",
+        "instructor": {
+          "name": "Anjali Kapoor",
+          "experience": "8 years in Cloud Infrastructure",
+          "rating": 4.8
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "James Lee",
+            "rating": 4.7,
+            "comment": "Best AWS course out there, helped me pass the certification!"
+          }
+        ],
+        "enrollmentLink": "https://example.com/cloud-computing-aws"
+        ,"image":"./image/CC.webp"
+      },
+      {
+        "courseName": "Data Visualization with Tableau",
+        "id":7,
+        "description": "Learn to create interactive dashboards and data visualizations with Tableau, and uncover insights from business data.",
+        "topicsCovered": [
+          "Introduction to Tableau",
+          "Creating Charts & Graphs",
+          "Building Interactive Dashboards",
+          "Data Filtering & Sorting",
+          "Storytelling with Data",
+          "Connecting to Multiple Data Sources",
+          "Publishing & Sharing Dashboards"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 299.99,
+          "discount": "15% Off"
+        },
+        "duration": "6 weeks",
+        "level": "Beginner to Intermediate",
+        "instructor": {
+          "name": "Katherine Lin",
+          "experience": "5 years in Data Analytics and Visualization",
+          "rating": 4.9
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Ethan Walker",
+            "rating": 4.8,
+            "comment": "Excellent course on Tableau, the projects were very practical."
+          }
+        ],
+        "enrollmentLink": "https://example.com/data-visualization-tableau"
+        ,"image":"./image/DV.webp"
+      },
+      {
+        "courseName": "Python for Finance and Investment",
+        "id":8,
+        "description": "Learn how to use Python to analyze financial data, build investment models, and make data-driven financial decisions.",
+        "topicsCovered": [
+          "Python Basics for Finance",
+          "Time Series Analysis",
+          "Portfolio Optimization",
+          "Risk Management",
+          "Valuation Models",
+          "Algorithmic Trading",
+          "Data Visualization in Finance"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 349.99,
+          "discount": "20% Off"
+        },
+        "duration": "12 weeks",
+        "level": "Intermediate",
+        "instructor": {
+          "name": "Marcus Miller",
+          "experience": "10 years in Financial Analytics",
+          "rating": 4.8
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Olivia Clarke",
+            "rating": 5.0,
+            "comment": "A perfect course for those looking to enter the finance sector with Python."
+          }
+        ],
+        "enrollmentLink": "https://example.com/python-finance-investment"
+        ,"image":"./image/FI.webp"
+      },
+      {
+        "courseName": "Machine Learning for Business Analytics",
+        "id":9,
+        "description": "Harness the power of machine learning to uncover patterns in business data, predict outcomes, and drive strategic decisions.",
+        "topicsCovered": [
+          "Introduction to Machine Learning",
+          "Supervised Learning Algorithms",
+          "Unsupervised Learning for Clustering",
+          "Decision Trees & Random Forests",
+          "Model Evaluation & Tuning",
+          "Real-World Case Studies",
+          "AI in Business Applications"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 499.99,
+          "discount": "10% Off"
+        },
+        "duration": "14 weeks",
+        "level": "Advanced",
+        "instructor": {
+          "name": "Sarah Adams",
+          "experience": "7 years in Business Analytics and Machine Learning",
+          "rating": 4.7
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Liam Martin",
+            "rating": 4.9,
+            "comment": "Fantastic course! The real-world business case studies made it very practical."
+          }
+        ],
+        "enrollmentLink": "https://example.com/machine-learning-business-analytics"
+        ,"image":"./image/ML.webp"
+      },
+      {
+        "courseName": "Advanced Calculus for Engineers",
+        "id":10,
+        "description": "Master advanced calculus concepts, including multivariable calculus and differential equations, and apply them in real-world engineering problems.",
+        "topicsCovered": [
+          "Multivariable Calculus",
+          "Vector Calculus",
+          "Differential Equations",
+          "Laplace Transforms",
+          "Partial Derivatives",
+          "Fourier Series",
+          "Applications in Engineering"
+        ],
+        "pricing": {
+          "currency": "USD",
+          "amount": 299.99,
+          "discount": "10% Off"
+        },
+        "duration": "10 weeks",
+        "level": "Advanced",
+        "instructor": {
+          "name": "Dr. Robert White",
+          "experience": "15 years in Engineering and Applied Mathematics",
+          "rating": 4.8
+        },
+        "certification": true,
+        "reviews": [
+          {
+            "reviewer": "Emma Scott",
+            "rating": 4.7,
+            "comment": "Very detailed and well-structured course on advanced calculus."
+          }
+        ],
+        "enrollmentLink": "https://example.com/advanced-calculus-engineers"
+        ,"image":"./image/AC.webp"
+      }
+    ]
+  }
+  
